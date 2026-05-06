@@ -1,0 +1,158 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: small;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 750px;
+    height: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.score {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 150px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+p {
+    color: white;
+    font-size: xx-large;
+    margin: 20px;
+}
+
+input {
+    background-color: rgb(30, 30, 60);
+    color: #ffffff;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    width: 225px;
+    height: 20px;
+}
+
+.button-style {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 140px;
+    height: 40px;
+
+    margin: 5px;
+
+    background-color: rgb(0, 0, 0, .3);
+    color: white;
+    text-decoration: none;
+
+    border-radius: 8px;
+    border: none;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+.button-style:hover {
+    background-color: rgb(60, 60, 120, .3);
+    width: 145px;
+    height: 42px;
+}
+
+.submit {
+    background-color: rgb(30, 30, 60);
+    color: #ffffff;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    width: 50px;
+    height: 20px;
+    transition: .2s;
+}
+.submit:hover {
+    background-color: rgb(60, 60, 120);
+    color: #ffffff;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    width: 55px;
+    height: 22px;
+}
+
+.country {
+    background-color: rgb(30, 30, 60);
+    color: #ffffff;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+    height: 100px;
+    margin: 5px;
+    transition: .2s;
+}
+.country:hover {
+    background-color: rgb(60, 60, 120);
+    color: #ffffff;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    width: 255px;
+    height: 102px;
+    margin: 5px;
+}
+
+.flag {
+    
+    font-size: 18px;
+    margin: 20px 0;
+    max-height: 150px;
+    object-fit: contain;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+.length {
+    color: gray;
+    font-size: 14px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: rgb(120, 120, 240);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 100px;
+}
+
+.button:hover {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: rgb(90, 90, 180);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 100px;
+}
+
+.flag {
+    width: 300px;
+    margin: 20px 0;
+}

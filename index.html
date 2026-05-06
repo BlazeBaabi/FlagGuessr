@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Guess the Flag</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body style="background-image: url('{{ cat }}')";>
+
+<a href="/set_mode/easy" class="button-style">easy mode</a>
+<a href="/set_mode/hard" class="button-style">hard mode</a>
+
+<div class="score">
+    <p id="Points">🎖️ {{ points }}</p>
+    <p id="Streak">🔥 {{ streak }}</p>
+</div>
+
+<div class="container">
+
+<h1>guess the flag</h1>
+
+<img src="{{ flag }}" alt="Flag" class="flag">
+
+<form method="POST" action="/guess">
+
+{% if mode == "easy" %}
+    <button class="country" type="submit" name="guess" value="{{ BTN1 }}">{{ BTN1 }}</button>
+    <button class="country" type="submit" name="guess" value="{{ BTN2 }}">{{ BTN2 }}</button>
+    <button class="country" type="submit" name="guess" value="{{ BTN3 }}">{{ BTN3 }}</button>
+    <button class="country" type="submit" name="guess" value="{{ BTN4 }}">{{ BTN4 }}</button>
+
+{% else %}
+    <input type="text" name="guess" placeholder="type country" autocomplete="off">
+    <button class="submit" type="submit">check</button>
+{% endif %}
+
+</form>
+
+</div>
+
+</body>
+</html>
